@@ -1,0 +1,101 @@
+function fift(){
+    var n=document.getElementById("num").value;
+    var m=parseInt(n);
+    document.getElementById("res").innerHTML=prin(m);    
+}
+function prin(n)
+{
+    var str="";
+    var i=1;
+    for(i=1;i<=n;i++)
+    {
+        if(i%3==0&&i%5==0)
+        {
+            str+="FizzBuzz";
+        }
+        else if(i%3==0)
+        {
+            str+="Fizz";
+        }
+        else if(i%5==0)
+        {
+            str+="Buzz";
+        }
+        else
+        {
+            str+=i;
+        }
+        if(i!=n)
+        {
+            str+=",";
+        }
+    }
+    return str;
+}
+---------------------------------
+function sixt(){
+    var n=document.getElementById("num").value;
+    var m=parseInt(n);
+    document.getElementById("res").innerHTML=arr(m);  
+}
+function arr(n)
+{
+    var a=prompt();
+    return a;
+}
+-----------------
+function fir(){
+    var n=document.getElementById("num").value;
+    var m=parseInt(n);
+    document.getElementById("res").innerHTML=fact(m);
+    
+}
+function fact(n){
+    if(n==0||n==1)
+        return 1;
+    return n*fact(n-1);
+}
+-----------------
+function powe(){
+    var n=document.getElementById("num").value;
+    var m=parseInt(n);
+    document.getElementById("res").innerHTML=po(m);    
+}
+function po(n)
+{
+    var i,x=2;
+    for(i=1;x*2<n;i++)
+    {
+        x*=2;
+    }
+    var y=x*2;
+    if(Math.abs(n-x)>Math.abs(y-n))
+    {
+        return i+1;
+    }
+    return i;
+}
+--------------------------------
+function multi(){
+    var n=document.getElementById("num").value;
+    var m=parseInt(n);
+    document.getElementById("res").innerHTML=loo(m-1);    
+}
+function loo(n)
+{
+    if(n==0)
+    {
+        return 0;
+    }
+    if(n%3==0||n%5==0)
+    {
+    return n+loo(n-1);
+    }
+    return loo(n-1);
+}
+------------------------------
+function sec(){
+    var n=document.getElementById("num").value;
+    var m=parseInt(n);
+    document.getElementById("res").innerHTML=(m*(m+1))/2;
+}
