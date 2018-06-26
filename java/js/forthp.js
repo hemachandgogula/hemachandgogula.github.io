@@ -5,10 +5,10 @@ function powe(){
 }
 function po(n)
 {
-    var i,x=1;
+    var i,x=2;
     for(i=1;x<=n;i++)
     {
-        x*=2;
+        x=x*2;
     }
     
    i--;
