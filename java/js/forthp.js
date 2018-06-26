@@ -6,15 +6,14 @@ function powe(){
 function po(n)
 {
     var i,x=2;
-    for(i=1;x<=n;i++)
+    for(i=1;x*2<n;i++)
     {
-        x=x*2;
+        x*=2;
     }
-    
-   i--;
-//     if(Math.abs(n-x)>Math.abs(y-n))
-//     {
-//         return i+1;
-//     }
+    var y=x*2;
+    if(Math.abs(n-x)>Math.abs(y-n))
+    {
+        return i+1;
+    }
     return i;
 }
