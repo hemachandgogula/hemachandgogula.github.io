@@ -6,7 +6,7 @@ function powe(){
 function po(n)
 {
     var i,x=1;
-    for(i=1;x<=n;i++)
+    for(i=1;x<n;i++)
     {
         x*=2;
     }
